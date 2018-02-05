@@ -1,0 +1,13 @@
+import collections
+t = int(input())
+while t:
+    t -= 1
+    s = input()
+    d = collections.defaultdict(int)
+    for index, i in enumerate(s):
+        d[i] += 1
+        if d[i] >= 2:
+            print("yes")
+            break
+    else:
+        print('no')
